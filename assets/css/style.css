@@ -1,0 +1,485 @@
+/* ================================================================
+* [ All Content indexing ]
+* =================================================================
+    1) basic setup
+    2) reuseable component
+    3) header
+
+==================================================================== /*
+
+/* ====================================== */
+/* 1) basic setup start */
+/* ====================================== */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body,
+html {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    color: #07253f;
+}
+/* ====================================== */
+/* basic setup end */
+/* ====================================== */
+
+/* ====================================== */
+/* 2) reuseable component start */
+/* ====================================== */
+.pad_top_bot {
+    padding: 100px 0;
+}
+/* ====================================== */
+/* reuseable component end */
+/* ====================================== */
+
+/* ====================================== */
+/* 3) header start */
+/* ====================================== */
+.header {}
+/* header top */
+.header_top {
+    padding: 8px 0;
+    /*background-color: #0d6efd;*/
+}
+.h_contact_wrap ul {}
+.h_contact_wrap ul li {}
+.h_contact_wrap ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.h_contact_wrap ul li a i {
+    margin-right: 5px;
+}
+.h_search_btn {
+    padding: 0;
+    color: #ffffff;
+}
+button:focus,
+input:focus,
+select:focus,
+.btn {
+    -webkit-box-shadow: 0 0 0 .25rem transparent !important;
+            box-shadow: 0 0 0 .25rem transparent !important;
+}
+.h_contact_wrap ul li a:hover,
+.h_search_btn:hover {
+    color: #07253f;
+}
+.searchCanvas_close {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+}
+.search_area input {
+    color: #07253f;
+    border: 2px solid #0d6efd;
+}
+.search_area input:focus {
+    color: #07253f;
+    background-color: #fff;
+    border-color: #0d6efd; 
+}
+.search_area input::-webkit-input-placeholder {
+    color: #0d6efd;
+}
+.search_area input::-moz-placeholder {
+    color: #0d6efd;
+}
+.search_area input:-ms-input-placeholder {
+    color: #0d6efd;
+}
+.search_area input::-ms-input-placeholder {
+    color: #0d6efd;
+}
+.search_area input::placeholder {
+    color: #0d6efd;
+}
+.offcanvas_search_btn {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+.offcanvas_search_btn:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+/* main menu */
+.logo_wrap {
+    padding: 0px;
+}
+.logo {
+    width: 150px;
+    height: auto;
+}
+.toggle_btn {
+        color: #0d6efd !important;
+}
+.main_menu {}
+.main_menu ul {}
+.main_menu ul li {}
+.main_menu ul li a {
+    margin: 0 9px !important;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #07253f !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.main_menu ul li:last-child a {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+.main_menu ul li a i {
+    margin-right: 5px;
+}
+.main_menu ul li a.active,
+.main_menu ul li a:hover {
+    border-top: 2px solid #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+    color: #0d6efd !important;
+}
+.toggle_btn {
+    border-color: #0d6efd !important;
+}
+/* ====================================== */
+/* header end */
+/* ====================================== */
+
+/* ====================================== */
+/* 4) banner start */
+/* ====================================== */
+.banner {}
+.slider_wrap {}
+.banner_slider {}
+.banner_slider .carousel-indicators {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px 0 0 0;
+    padding: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+}
+.banner_slider button {
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+    width: 14px !important;
+    height: 14px !important;
+    background-color: #0d6efd !important;
+    border-radius: 50%;
+}
+.banner_disc {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.banner_title {
+    margin-bottom: 50px;
+    font-size: 65px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.my_btn {
+    position: relative;
+    margin: 6px;
+    border-radius: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #07253f;
+}
+.my_btn:before, .my_btn:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: #0d6efd;
+    border-style: solid;
+    width: 1em;
+    height: 1em;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.my_btn:before {
+    top: -4px;
+    left: -4px;
+    border-width: 1px 0 0 1px;
+    z-index: 5;
+}
+.my_btn:after {
+    bottom: -4px;
+    right: -4px;
+    border-width: 0 1px 1px 0;
+}
+.my_btn:hover:before, .my_btn:hover:after {
+    width: calc(100% + 13px);
+    height: calc(100% + 13px);
+    border-color: #0d6efd;
+}
+.banner_img img {
+        width: calc(100% - 40px);
+    -webkit-animation-name: slideInRight;
+            animation-name: slideInRight;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+}
+/* ====================================== */
+/* banner end */
+/* ====================================== */
+
+/* ====================================== */
+/* 5) search car start */
+/* ====================================== */
+.search_car {}
+.sec_header_wrap {}
+.sec_desc {
+    letter-spacing: 1px;
+}
+.sec_title {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.sec_title span {
+    font-weight: 700;
+}
+.search_carForm {}
+.search_carForm label {}
+.search_carForm select {
+    margin-bottom: 6px;
+}
+/* ====================================== */
+/* search car end */
+/* ====================================== */
+
+/* ====================================== */
+/* 6) about start */
+/* ====================================== */
+.about {}
+.about_text {}
+.about_list {}
+.about_list ul {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+}
+.about_list ul li {
+    margin: 5px 0;
+}
+.about_list ul li i {
+    padding: 5px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #0d6efd;
+}
+/* ====================================== */
+/* about end */
+/* ====================================== */
+
+/* ====================================== */
+/* 7) our advantage start */
+/* ====================================== */
+.advantage {}
+.advantage_wrap {
+    /*background-color: #0d6efd;*/
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.advantage_wrap:hover {
+    color: #fff;
+    background-color: #0d6efd;
+}
+.advantage_icon {}
+.advantage_icon i {
+    font-size: 60px;
+}
+.advantage_wrap h5 {}
+.advantage_wrap p {}
+/* ====================================== */
+/* our advantage end */
+/* ====================================== */
+
+/* ====================================== */
+/* 8) services start */
+/* ====================================== */
+.services {}
+.services_wrap {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.services_wrap:hover {
+    -webkit-box-shadow: 0 .5rem 1rem #0d6efd;
+            box-shadow: 0 .5rem 1rem #0d6efd;
+}
+.services_wrap i {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    background-color: #0d6efd;
+}
+.services_wrap h2 {}
+.services_wrap p {}
+.services {}
+/* ====================================== */
+/* services end */
+/* ====================================== */
+
+/* ====================================== */
+/* 8) footer top start */
+/* ====================================== */
+.footer_top {}
+.social_wrap {}
+.social_wrap a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 31px;
+    color: #fff;
+    border: 1px solid #07253f;
+    border-radius: 50%;
+    background-color: #07253f;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.social_wrap a:hover {
+    color: #07253f;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.social_wrap {}
+.subscribe_input,
+.subscribe_input:focus {
+    border-color: #fff;
+    background-color: transparent;
+}
+.subscribe_input~.form-label {
+    position: absolute;
+    top: 4px;
+    max-width: 90%;
+    overflow: hidden;
+    left: .75rem;
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #fff;
+    margin-bottom: 0px;
+    background-color: #0D6EFD;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.subscribe_input:focus~.form-label {
+    color: #fff;
+}
+.subscribe_input.active~.form-label,
+.subscribe_input:focus~.form-label {
+    -webkit-transform: translateY(-1rem) translateY(.1rem) scale(.8);
+        -ms-transform: translateY(-1rem) translateY(.1rem) scale(.8);
+            transform: translateY(-1rem) translateY(.1rem) scale(.8);
+}
+.btn-outline-dark_blue {
+    color: #fff;
+    border-color: #fff;
+}
+.btn-outline-dark_blue:hover {
+    color: #07253f;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-outline-dark_blue {
+     margin: 0; 
+}
+.btn-outline-dark_blue:before,
+.btn-outline-dark_blue:after {
+    border-color: #fff;
+}
+.btn-outline-dark_blue:hover:before,
+.btn-outline-dark_blue:hover:after {
+    border-color: #fff;
+}
+.footer_widget ul li a {
+    display: inline-block;
+    margin-top: 7px;
+}
+/* ====================================== */
+/* footer top end */
+/* ====================================== */
+
+/* ====================================== */
+/* 9) footer start */
+/* ====================================== */
+footer {
+    background-color: #07253f;
+}
+/* ====================================== */
+/* footer end */
+/* ====================================== */
+
+/* ====================================== */
+/* 10) reuseable start */
+/* ====================================== */
+
+/* ====================================== */
+/* reuseable end */
+/* ====================================== */

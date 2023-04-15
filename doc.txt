@@ -1,0 +1,9 @@
+navy-blue- #07253f
+white- #ffffff
+blue- #0d6efd
+red- #f9676b
+400 - regular
+500 - medium
+600 - semi bold
+700 - bold
+800 - extra bold
